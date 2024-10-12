@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Weather App</h1>
+    </header>
+    <main class="container">
+      <section class="search-container">
+        <input
+          type="text"
+          class="search-input"
+          id="search-input"
+          placeholder="Enter City Name Here"
+          autocomplete="off"
+        />
+        <button class="search-button" id="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </section>
+      <section class="weather-container" id="weather">
+        <img
+          src="https://cdn.weatherapi.com/weather/64x64/night/143.png"
+          alt="Weather"
+          class="cloud-img"
+          id="cloud-img"
+        />
+        <h1 class="celsius"><span id="celsius">31.1</span> <sup>o</sup></h1>
+        <h2 class="city" id="city">Chennai</h2>
+      </section>
+
+      <section class="details">
+        <section class="humidity">
+          <section class="humidity-left">
+            <img
+              src="./images/humidity.png"
+              alt="Humidity"
+              class="humidity-img"
+            />
+          </section>
+          <section class="humidity-right">
+            <h2 class="himidity-percentage" id="humidity-percentage">
+              <span id="humidity">79</span>%
+            </h2>
+            <p class="text">Humidity</p>
+          </section>
+        </section>
+        <section class="wind-speed" id="wind-speed">
+          <section class="wind-speed-left">
+            <img src="./images/wind.png" alt="Wind Speed" class="wind-img" />
+          </section>
+          <section class="wind-speed-right" id="wind-speed-right">
+            <h2 class="wind-speed-number">
+              <span id="wind-speed-no">15.1</span> km/h
+            </h2>
+            <p class="text">Wind Speed</p>
+          </section>
+        </section>
+      </section>
+    </main>
+    <p><small class="copyright">Copyright &copy; 2024 By Dhenskript</small></p>
+  </body>
+</html>
